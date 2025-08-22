@@ -122,3 +122,215 @@ footer {
     border-top-right-radius: 30px;
     margin-top: 3rem;
 }
+
+/* --- Trailer --- */
+.trailer {
+    text-align: center;
+    margin: 3rem auto;
+    max-width: 800px;
+}
+
+.video-container,
+.trailer video {
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(163, 136, 255, 0.7),
+    0 0 40px rgba(163, 136, 255, 0.5),
+    0 0 60px rgba(255, 204, 112, 0.4);
+    animation: glowPulse 3s ease-in-out infinite;
+}
+
+/* --- Pulsing animation --- */
+@keyframes glowPulse {
+    0% { box-shadow: 0 0 15px rgba(163,136,255,0.6),
+    0 0 30px rgba(255,204,112,0.3); }
+    50% { box-shadow: 0 0 25px rgba(163,136,255,0.9),
+    0 0 50px rgba(255,204,112,0.5); }
+    100% { box-shadow: 0 0 15px rgba(163,136,255,0.6),
+    0 0 30px rgba(255,204,112,0.3); }
+}
+
+.about-content, .values, .team {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: rgba(40, 30, 70, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.6);
+}
+
+.about-content h3, .values h3, .team h3 {
+    text-align: center;
+    color: #a388ff;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px rgba(163,136,255,0.6);
+}
+
+.value-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.value-card {
+    flex: 1 1 200px;
+    background: rgba(20, 15, 40, 0.9);
+    padding: 1.2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.value-card h4 {
+    margin-bottom: 0.5rem;
+    color: #ffe066;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    background: rgba(20, 15, 40, 0.9);
+    padding: 1rem;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 220px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.team-card img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid #a388ff;
+}
+
+/* --- Game Hero Layout --- */
+.game-hero {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 1500px;
+    margin: 3rem auto;
+    padding: 2rem;
+    /*background: rgba(40, 30, 70, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.6);*/
+}
+
+/* Left column (video) */
+.game-trailer {
+    flex: 1 1 500px;
+    min-width: 300px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(163, 136, 255, 0.7),
+    0 0 40px rgba(163, 136, 255, 0.5),
+    0 0 60px rgba(255, 204, 112, 0.4);
+    animation: glowPulse 3s ease-in-out infinite;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 15px;
+}
+
+/* Right column (logo + text) */
+.game-info {
+    flex: 1 1 600px;
+    min-width: 280px;
+    text-align: center;
+    color: #e6daff;
+}
+
+.game-info p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.game-logo {
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 0 10px rgba(255,255,255,0.5));
+}
+/* --- Steam Call To Action --- */
+.steam-cta {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.steam-btn {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: linear-gradient(90deg, #66c0f4, #1b2838);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 40px;
+    box-shadow: 0 0 20px rgba(102, 192, 244, 0.6);
+    transition: 0.3s ease;
+}
+
+.steam-btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 35px rgba(102, 192, 244, 0.9);
+}
+
+/* --- Feature Highlight (now open & flowing) --- */
+.game-feature {
+    max-width: 800px;
+    margin: 4rem auto 2rem;
+    text-align: center;
+}
+
+.game-feature h3 {
+    color: #ffe066;
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+    text-shadow: 0 0 8px rgba(255, 224, 102, 0.6);
+}
+
+.game-feature p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #e6daff;
+}
+
+/* --- GIF Showcase --- */
+.game-gif {
+    text-align: center;
+    margin: 3rem 0 5rem;
+}
+
+.game-gif img {
+    max-width: 85%;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(163, 136, 255, 0.6);
+    animation: subtleGlow 4s ease-in-out infinite alternate;
+}
+
+@keyframes subtleGlow {
+    from { box-shadow: 0 0 20px rgba(163, 136, 255, 0.4); }
+    to   { box-shadow: 0 0 35px rgba(163, 136, 255, 0.8); }
+}
