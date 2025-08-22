@@ -285,7 +285,7 @@ footer {
     padding: 1rem 2.5rem;
     font-size: 1.2rem;
     font-weight: 600;
-    background: linear-gradient(90deg, #66c0f4, #1b2838);
+    background: linear-gradient(90deg, #dad8f0, #2b1c36);
     color: #fff;
     text-decoration: none;
     border-radius: 40px;
@@ -306,10 +306,10 @@ footer {
 }
 
 .game-feature h3 {
-    color: #ffe066;
+    color: #dad8f0;
     font-size: 1.8rem;
     margin-bottom: 0.8rem;
-    text-shadow: 0 0 8px rgba(255, 224, 102, 0.6);
+    text-shadow: 0 0 8px rgb(56, 17, 80);
 }
 
 .game-feature p {
@@ -381,4 +381,120 @@ footer {
     cursor: pointer;
     transform: scale(1.05);
     transition: 0.3s ease;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn {
+    color: #ddd;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    transition: 0.3s;
+}
+
+.dropbtn:hover {
+    color: #ffe066;
+    text-shadow: 0 0 8px #ffd700;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: rgba(20, 15, 40, 0.95);
+    min-width: max-content;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+    border-radius: 10px;
+    z-index: 1;
+    margin-top: 0.5rem;
+}
+
+/* Links inside dropdown */
+.dropdown-content a {
+    color: #e6daff;
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    margin: 0;
+    display: block;
+    transition: 0.3s;
+}
+
+.dropdown-content a:hover {
+    background: rgba(163, 136, 255, 0.2);
+    color: #ffe066;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Game Footer */
+.game-footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 4rem;
+    padding: 2rem;
+    /*background: rgba(20, 15, 40, 0.6);
+    border-radius: 15px;*/
+}
+
+/* Features list */
+.features h2 {
+    font-size: 1.8rem;
+    color: #dad8f0;
+    margin-bottom: 1rem;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.features ul li {
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-left: 2rem;
+    color: #e6daff;
+}
+
+/* Magical glowing bullet */
+.features ul li::before {
+    content: "✨";
+    position: absolute;
+    left: 0;
+    color: #ffd700;
+}
+
+/* Right side buttons */
+.game-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.glow-button {
+    background: #2d1b55;
+    color: #dad8f0;
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 0 8px #7a5af5;
+}
+
+.glow-button:hover {
+    background: #3c2473;
+    box-shadow: 0 0 15px #dad8f0;
+    color: #fff;
+    transform: scale(1.05);
 }
